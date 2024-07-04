@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Create a Release
-      uses: elgohr/Github-Release-Action@main
+      uses: vitalii-gdi/Github-Release-Action@main
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:

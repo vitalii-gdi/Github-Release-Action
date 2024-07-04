@@ -1,6 +1,6 @@
 # Github-Release-Action
 
-[![Actions Status](https://github.com/elgohr/Github-Release-Action/workflows/Release/badge.svg)](https://github.com/elgohr/Github-Release-Action/actions)
+[![Actions Status](https://github.com/vitalii-gdi/Github-Release-Action/workflows/Release/badge.svg)](https://github.com/vitalii-gdi/Github-Release-Action/actions)
 
 Creates a plain Github release, without attaching assets or source code.
 
@@ -16,9 +16,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Create a Release
-      uses: elgohr/Github-Release-Action@v5
+      uses: vitalii-gdi/Github-Release-Action@v5
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
